@@ -226,6 +226,15 @@
         </defs>
       </svg>
       <h1>Hello, {{ title }}</h1>
+      <h3>Tech is {{favoriteTech}}</h3>
+      <div>
+        <input [(ngModel)]="favColor"> |
+        <label>{{ favColor }}</label>
+      </div>
+      <button (click)="changeData()">Change Data</button>
+      <ul>
+        <li *ngFor="let name of names">{{ name }}</li>
+      </ul>
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
